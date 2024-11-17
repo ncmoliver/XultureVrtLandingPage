@@ -1,0 +1,116 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e6e6e6;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* Content */
+.content {
+  flex: 1; /* Takes up the remaining space between header and footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.art-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.art-container:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.art-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.art-piece {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* Art Information */
+.art-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.art-info h3 {
+  font-size: 1.2rem;
+  color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+.art-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.art-info .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f7b731;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #777;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
